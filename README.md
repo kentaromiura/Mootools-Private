@@ -1,38 +1,49 @@
 Mootools-Private
 ================
 
-What goes here is the description. Please don't make it too long. It can contain basic *styling*, **styling**, etc.
-
-If an image is found within the description, that becomes the screenshot of the plugin. Screenshots are optional but encouraged, given the plugin has some visual interaction. The screenshot can be of any size, but try to keep it of about 200x100.
-
+Private is a mutator which let you write code which use a sort of private properties and methods
 
 How to use
 ----------
 
-We expect this section for every plugin. It just explains how to use your plugin.
-Never should a plugin rely on a 3rd party link to explain its behavior or functionality. We need this to ensure that if a website is removed or becomes inaccessible, people can still enjoy your plugins' functionality.
+Just include keeto.PatternMutator.js and kenta.Private.js, then you can write code like the snippet below:
 
-It often includes code snippets, which are just indented pieces of text:
+	var Test = new Class({
+		Implements:[Options],
+		'private initialize':function(options, _private){
+			this.setOptions(options);
+			_private.test = 'Hello, '+ (options.name || 'world!');
+		},
+		'private say':function(i_can_call_this_as_i_want){
+			alert(i_can_call_this_as_i_want.test);
+		},
+		a_normal_method:function(){
+			alert("I don't use privates");
+		}
+	});
 
-	var script = new MyScript()
-	script.doSomething();
+	var kenta = new Test({name:'kenta'});
+	kenta.say();
+	kenta.a_normal_method();
 
-Syntax highlighting will be done automatically for you.
+	var test2 = new Test({});
+	test2.say();
 
-Screenshots
------------
+	//when done
+	test2['~']();
+	kenta['~']();​
 
-This section is optional, but encouraged if the plugin affords it. Just a list of images, one per line. We do the resizing, so use actual size screenshots.
+in order to access the private method/properties you must decorate the method name adding 'private' just before the method name.
 
-Arbitrary section
+mykenta.blogspot.com
 -----------------
+here you can find other infos:
+http://mykenta.blogspot.it/2011/10/mootools-private-pattern-mutator.html
 
-This is an arbitrary section. You can have as many of these as you want.
-Some arbitrary section examples:
+for 1.4, $uid was removed in favor of Slick.uidOf, so if you're using 1.4, just add this line:
 
-* FAQ
-* Notes
-* Misc
-* Known issues
+  var $uid = Slick.uidOf;
 
-The name is up to you, but remember to keep it meaningful and simple. Arbitrary sections are always optional.
+before loading kenta.Private.js.
+
+I will update the plugin soon so that It will use Slick.uidOf.
