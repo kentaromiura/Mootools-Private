@@ -1,14 +1,14 @@
 /*
- ---
- name: kenta.Private
- description: Private mootator for MooTools 1.3.x
- authors: Cristian Carlesso http://mykenta.blogspot.com
- copyright: Cristian Carlesso
- license: MIT-style license.
- requires: [Class.PatternMutators]
- provides: [Private]
- ...
- */
+---
+name: kenta.Private
+description: Private mootator for MooTools 1.3.x
+authors: Cristian Carlesso http://mykenta.blogspot.com
+copyright: Cristian Carlesso
+license: MIT-style license.
+requires: [Class.PatternMutators]
+provides: [Private]
+...
+*/
 
 (function(){
 	var Private={};
