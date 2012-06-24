@@ -1,23 +1,14 @@
 /*
  ---
-
  name: Class.PatternMutators
-
  description: Pattern-Based Mutation for MooTools 1.3
-
- license: MIT-style license.
-
+ authors: Mark Obcena
  copyright: Mark Obcena
-
+ license: MIT-style license.
  requires: [Class]
-
  provides: [Class.defineMutator, Class.define]
-
- authors: [Mark Obcena]
-
  ...
  */
-
 
 (function(){
 
