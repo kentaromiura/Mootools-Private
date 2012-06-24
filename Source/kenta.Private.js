@@ -9,9 +9,11 @@
 
  copyright: Carlesso Cristian http://mykenta.blogspot.com
 
- requires: Class.PatternMutators
+ requires: [Class.PatternMutators]
 
- provides: private pattern mutator, '~' cleanup method.
+ provides: [Private]
+
+ authors: [Cristian Carlesso]
 
  ...
  */

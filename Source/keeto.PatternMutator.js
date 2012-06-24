@@ -9,9 +9,11 @@
 
  copyright: Mark Obcena
 
- requires: Class
+ requires: [Class]
 
  provides: [Class.defineMutator, Class.define]
+
+ authors: [Mark Obcena]
 
  ...
  */
