@@ -2,6 +2,6 @@ name: Private
 author: kentaromiura
 category: Native
 tags: [private, mutator]
-#docs: http://mykenta.blogspot.it/2011/10/mootools-private-pattern-mutator.html
-#demo: http://jsfiddle.net/qUkX6/light/
-#current: 0.9.a
+docs: http://mykenta.blogspot.it/2011/10/mootools-private-pattern-mutator.html
+demo: http://jsfiddle.net/qUkX6/light/
+current: 0.9.a
