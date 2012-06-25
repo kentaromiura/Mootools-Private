@@ -11,6 +11,9 @@ provides: [Private]
 */
 
 (function(){
+	var $uid = function(x){
+		return x._privateUID || (x._privateUID = String.uniqueID());
+	};
 	var Private={};
 	Class.defineMutator(/^private\s(.*)/,function(fn, name){
 
