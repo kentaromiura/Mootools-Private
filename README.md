@@ -40,10 +40,3 @@ mykenta.blogspot.com
 here you can find other infos:
 http://mykenta.blogspot.it/2011/10/mootools-private-pattern-mutator.html
 
-for 1.4, $uid was removed in favor of Slick.uidOf, so if you're using 1.4, just add this line:
-
-  var $uid = Slick.uidOf;
-
-before loading kenta.Private.js.
-
-I will update the plugin soon so that It will use Slick.uidOf.
